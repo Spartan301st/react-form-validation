@@ -1,38 +1,86 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-color: #ff9d00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; */
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1023%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M691.23 156.81 a214.04 214.04 0 1 0 428.08 0 a214.04 214.04 0 1 0 -428.08 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M438.799%2c884.157C506.088%2c886.412%2c577.552%2c863.315%2c609.335%2c803.962C639.906%2c746.872%2c611.481%2c680.543%2c577.277%2c625.552C545.507%2c574.474%2c498.939%2c531.007%2c438.799%2c529.784C376.761%2c528.523%2c321.201%2c565.957%2c290.211%2c619.715C259.258%2c673.409%2c256.613%2c739.128%2c286.973%2c793.16C317.951%2c848.292%2c375.595%2c882.039%2c438.799%2c884.157' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1562.622%2c695.626C1635.817%2c693.911%2c1697.071%2c644.687%2c1732.082%2c580.385C1765.487%2c519.034%2c1766.228%2c445.654%2c1731.831%2c384.854C1696.891%2c323.094%2c1633.58%2c281.305%2c1562.622%2c280.847C1490.899%2c280.384%2c1426.356%2c321.064%2c1389.586%2c382.645C1351.801%2c445.926%2c1343.166%2c524.159%2c1378.826%2c588.661C1415.586%2c655.151%2c1486.668%2c697.406%2c1562.622%2c695.626' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1207.24 718.61 a355.22 355.22 0 1 0 710.44 0 a355.22 355.22 0 1 0 -710.44 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M437.29 85.67 a218.58 218.58 0 1 0 437.16 0 a218.58 218.58 0 1 0 -437.16 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1456.18 692.35 a241.89 241.89 0 1 0 483.78 0 a241.89 241.89 0 1 0 -483.78 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M366.222%2c828.145C418.744%2c824.781%2c455.481%2c782.818%2c482.43%2c737.611C510.281%2c690.892%2c533.817%2c636.449%2c509.502%2c587.795C483.079%2c534.924%2c425.328%2c505.019%2c366.222%2c505.081C307.222%2c505.143%2c253.159%2c537.114%2c223.461%2c588.095C193.559%2c639.426%2c190.649%2c703.296%2c221.014%2c754.354C250.759%2c804.37%2c308.149%2c831.864%2c366.222%2c828.145' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M209.47 929.04 a304.59 304.59 0 1 0 609.18 0 a304.59 304.59 0 1 0 -609.18 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M667.676%2c1484.962C768.919%2c1489.959%2c858.9%2c1419.267%2c904.533%2c1328.754C946.127%2c1246.253%2c923.815%2c1150.788%2c876.016%2c1071.72C830.155%2c995.858%2c756.29%2c939.361%2c667.676%2c936.955C574.89%2c934.435%2c482.806%2c978.137%2c438.77%2c1059.846C396.548%2c1138.189%2c425.934%2c1228.856%2c468.127%2c1307.215C513.39%2c1391.276%2c572.319%2c1480.255%2c667.676%2c1484.962' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1023'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+form {
+  min-height: 400px;
+  width: 300px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    109.6deg,
+    rgba(61, 245, 167, 1) 11.2%,
+    rgba(9, 111, 224, 1) 91.1%
+  );
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 0 #777;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #02aab0 0%,
+    #00cdac 51%,
+    #02aab0 100%
+  );
+}
+.btn-grad {
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
   color: white;
+  border-radius: 50px;
+  display: block;
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 3px 0 #333;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  box-shadow: -3px 3px 3px 0 #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 550px) {
+}
+@media only screen and (min-width: 768px) and (min-height: 768px) {
+  form {
+    min-height: 500px;
+    width: 400px;
+    padding: 2em;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+  form {
+    min-height: 500px;
+    width: 450px;
+    padding: 2em;
   }
 }
